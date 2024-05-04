@@ -16,6 +16,8 @@ O projeto é um agregador de links desenvolvido durante o curso de formação b�
 
 O agrupador de páginas consiste num site que possui 4 redirecionadores, sendo 1 para um link e 3 para páginas. Além disso, há ícones de redes sociais que redirecionam para o meu perfil. Também, com o auxílio do JavaScript foi possível adicionar um botão que permite a alternar entre tema claro e escuro.
 
+Você pode acessar o projeto <a href="https://jefdejesus.github.io/projeto-discover/" target="_blank">clicando aqui<a/>
+
 <h2 id="tecnologias">🚀 Tecnologias</h2>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
