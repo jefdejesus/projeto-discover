@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Discover — Trailer</title>
+
+    <!-- Define o tipo de fonte e cor com Style Interno-->
+    <style type="text/css">
+      body * {
+        font-family: "Inter", sans-serif;
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style-trailer.css" />
+  </head>
+  <body>
+    <!-- Caixa maior contendo todos os elementos -->
+    <div id="container">
+      <!-- Caixa com a imagem de perfil e nome de usuário -->
+      <div id="profile">
+        <a href="./index.html">
+          <img
+            src="./assets/avatar-dark.png"
+            alt="Foto de Jef de Jesus sorrindo, usando óculos e olhando para o lado com uma paisagem atrás dele."
+          />
+        </a>
+        <p>@jefdejesus</p>
+      </div>
+
+      <!-- Botão de acionamento do tema claro e escuro -->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span> </span>
+      </div>
+
+      <!-- Capa, título e reprodutor da música -->
+    <div id="trailer">
+      <a href="./index.html"><p class="back_button"><-- voltar para o menu</p></a>
+
+      <video controls style="width: 100%; border-radius: 8px;">
+        <source src="./assets/Back To The Future (1985) Theatrical Trailer.mp4">
+      </video>
+
+    </div>
+      
+      <!-- Conjunto de ícones -->
+      <div id="icons">
+        <a href="https://www.behance.net/jefdejesus" target="_blank"
+          ><ion-icon name="logo-behance"></ion-icon
+        ></a>
+        <a href="https://www.instagram.com/jefdejesus" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/jefdejesus" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://www.behance.net/estudioponta" target="_blank"
+          ><ion-icon name="globe-outline"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <!-- Rodapé do site com Style Inline -->
+    <footer style="font-size: 14px; text-align: center; padding: 24px">
+      Feito com ❤ por Jef de Jesus
+    </footer>
+
+    <!-- Script dos ícones -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -30,7 +30,7 @@
 /* Define a imagem de fundo nos dispositivos menores */
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 100%;
 }
 
 /* Especifica as dimensões do container maior*/
@@ -88,7 +88,7 @@ body {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--highlight-color)
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -102,19 +102,21 @@ body {
   border-radius: 24px;
 }
 
-/* Define o estilo da lista */
-ul {
-  list-style: none;
+/* Define os estilos das imagens */
+#music {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 48px;
   padding: 24px 0px;
 }
 
-ul li a {
+#music .back_button {
   display: flex;
   padding: 16px 24px;
-  align-items: center;
+  margin: 0px auto 0px;
   justify-content: center;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
@@ -123,16 +125,70 @@ ul li a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
-  text-decoration: none;
   font-weight: 500;
 
-  transition: all 0.2s;
+  transition: all 0.2s;  
 }
 
-/*pseudo-selector para a animação dos botões da lista */
-ul li a:hover {
+#music .back_button:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+}
+
+#music .music_artist {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 0.5;
+  padding: 24px 0 0 0;
+}
+
+#music .music_title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 0;
+  padding: 0 0 24px 0;
+}
+
+#music img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 294px;
+  margin: 24px auto 0px;
+}
+
+#icons-music .icon_title {
+  font-size: 12px;
+  text-align: center;
+  margin: 8px auto;
+}
+
+/* Definindo o estilo dos ícones de streaming */
+#icons-music {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  font-size: 48px;
+}
+
+#icons-music a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#icons-music a:hover {
+  background: var(--highlight-color);
+}
+
+#icons-music img {
+  width: 32px;
+  margin: auto;
 }
 
 /* Definindo o estilo dos ícones */
@@ -160,12 +216,12 @@ ul li a:hover {
 /* Configurar o tipo de bakcground para tamanhos maiores */
 @media (min-width: 700px) {
   :root {
-  --bg-url: url(./assets/bg-desktop-dark.jpg);
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
   }
 
-.light {
-  --bg-url: url(./assets/bg-desktop-light.jpg);
-}
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
 
 /* Adiciona a animação do botão */
@@ -176,7 +232,7 @@ ul li a:hover {
   to {
     left: 50%;
   }
-  }
+}
 
 @keyframes slide-back {
   from {
@@ -185,4 +241,4 @@ ul li a:hover {
   to {
     left: 0;
   }
-  }
+}

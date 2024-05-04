@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Discover — Música</title>
+
+    <!-- Define o tipo de fonte e cor com Style Interno-->
+    <style type="text/css">
+      body * {
+        font-family: "Inter", sans-serif;
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style-music.css" />
+  </head>
+  <body>
+    <!-- Caixa maior contendo todos os elementos -->
+    <div id="container">
+      <!-- Caixa com a imagem de perfil e nome de usuário -->
+      <div id="profile">
+        <a href="./index.html">
+          <img
+            src="./assets/avatar-dark.png"
+            alt="Foto de Jef de Jesus sorrindo, usando óculos e olhando para o lado com uma paisagem atrás dele."
+          />
+        </a>
+        <p>@jefdejesus</p>
+      </div>
+
+      <!-- Botão de acionamento do tema claro e escuro -->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span> </span>
+      </div>
+
+      <!-- Capa, título e reprodutor da música -->
+    <div id="music">
+      <a href="./index.html"><p class="back_button"><-- voltar para o menu</p></a>
+      <img  src="https://images.genius.com/4819c40747ff7fd043637e08e8dfb35a.999x999x1.png"/>
+      
+      <p class="music_artist">MAGIC!</p>
+      <p class="music_title">Stay in the Light</p>
+      
+      <audio controls style="width: 100%;">
+       <source src="./assets/MAGIC - Stay in the Light.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+
+      <!-- Ícones das plataformas de streaming-->
+      <div id="icons-music">
+        <span><a href="https://www.youtube.com/watch?v=qplHcLDkeOw" target="_blank"><img src="https://www.gstatic.com/kpui/listen/youtube_icon_44x44.png"></a><p class="icon_title">YouTube</p></span>
+        
+         <span><a href="https://open.spotify.com/track/4pRBDKYUuMUlnXFnL43KiF?si=4784aaa304164a8c" target="_blank"><img src="https://www.gstatic.com/kpui/listen/spotify_44x44.png"></a></a><p class="icon_title">Spotify</p></span>
+
+         <span><a href="https://music.youtube.com/watch?v=qplHcLDkeOw" target="_blank"><img src="https://www.gstatic.com/kpui/listen/youtube_music_44x44.png"></a></a><p class="icon_title">YouTube<br>Music</p></span>
+
+         <span><a href="https://music.apple.com/br/album/stay-in-the-light/1736237217?i=1736237225" target="_blank"><img src="https://www.gstatic.com/kpui/listen/apple_music_icon_44x44.png"></a></a><p class="icon_title">Apple<br>Music</p></span>
+
+         <span><a href="https://deezer.page.link/KNYKJ48XHrjsU9Cx8" target="_blank"><img src="https://www.gstatic.com/kpui/listen/deezer_44X44.png"></a></a><p class="icon_title">Deezer</p></span>
+      </div>
+
+    </div>
+      
+      <!-- Conjunto de ícones -->
+      <div id="icons">
+        <a href="https://www.behance.net/jefdejesus" target="_blank"
+          ><ion-icon name="logo-behance"></ion-icon
+        ></a>
+        <a href="https://www.instagram.com/jefdejesus" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/jefdejesus" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://www.behance.net/estudioponta" target="_blank"
+          ><ion-icon name="globe-outline"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <!-- Rodapé do site com Style Inline -->
+    <footer style="font-size: 14px; text-align: center; padding: 24px">
+      Feito com ❤ por Jef de Jesus
+    </footer>
+
+    <!-- Script dos ícones -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
